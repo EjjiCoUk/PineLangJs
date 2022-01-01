@@ -39,8 +39,6 @@ function skipSpace(string) {
   if (first == -1) return "";
   return string.slice(first);
 }
-skipSpace(`HEY
-Bro`)
 function parseApply(expr, program) {
   program = skipSpace(program);
   if (program[0] != "(") {
